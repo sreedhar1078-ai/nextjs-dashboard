@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   experimental: {
-    ppr: 'incremental',
+    ppr: 'incremental', // optional, if you're using Partial Prerendering
   },
   eslint: {
     ignoreDuringBuilds: true,
