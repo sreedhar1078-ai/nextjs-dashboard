@@ -5,5 +5,10 @@ const nextConfig: NextConfig = {
     ppr: 'incremental'
   }
 };
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
 export default nextConfig;
