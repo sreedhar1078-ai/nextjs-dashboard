@@ -1,7 +1,5 @@
 import NavLinks from '@/app/ui/dashboard/nav-links';
-import { PowerIcon } from '@heroicons/react/24/outline';
-import { handleSignOut } from '@/app/lib/signOut';
-
+import SignOutButton from '@/app/ui/dashboard/signout-button';
 export default function SideNav() {
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
@@ -9,9 +7,7 @@ export default function SideNav() {
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         
-<form action={handleSignOut}>
-  <button>Sign Out</button>
-</form>
+ <SignOutButton />
     </div>
     </div>
   );
